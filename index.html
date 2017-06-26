@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="lib/jquery.js"></script>
+    <script type="text/javascript" src="lib/raphael.js"></script>
+    <script type="text/javascript" src="chart/VChart.js"></script>
+    <script type="text/javascript" src="chartTest.js"></script>
+
+    <style type="text/css">
+
+        body
+        {
+            background-color: #000;
+        }
+
+        .chart {float : left; width: 1000px; height: 500px;}
+        .legend{float : left; width: 300px; height: 500px}
+        .chartPanel{ width: 1500px; height: 500px; padding-left: 50px; padding-top: 50px;}
+    </style>
+    <script type="text/javascript">
+
+        var str = '{"status":1,"message":"success","data":{"user_id":"1","role":"1","name":"kongxiangtao","event_id":"519","event_title":"\u6d4b\u8bd5\u6559\u5ba4\u6807\u9898","event_type":"1","status":"0","start_time":"1415775600","end_time":"1415779200","joinstring":"tang:\/\/\/us:show.quanshi.com\/upgradeserver\/up:80\/app:3\/skin:1\/site:300000\/lang:zh_CN\/dm:quanshi-show\/Version:default\/conf_id:98098944\/user_id:989994165\/cts_ip:192.168.32.223-show-lkcts.quanshi.com|0.0.0.0\/dts_ip:192.168.32.222-show-lkdts.quanshi.com\/channel_info:1|167779611|167773216|167779612|167773217|775|167779613|167773218|167779614|167773219|776|167779615|167773220|167779616|167773221|777|167779617|167773222|167779618|167773223|258|167779619|167773224|167779620|167773225|259|167779621|167773226|167779622|167773227|516|167779623|167773228|167779624|167773229","tang_id":"989994165","pin":"3333","server_time":1415763782,"conferenceid":"98098944","api_url":"http:\/\/training.quanshi.com\/showdevdemo\/api\/v1\/c\/519\/olUXXQrcVJPIcNDS","token":"a96dc2765a4569c7a0890dbc3cebcb8c70edebdc"}}'
+        var data = eval(str);
+        console.log(data);
+
+    </script>
+</head>
+<body>
+    <div class="chartPanel" style="display: none">
+        <div id="test" class="chart"></div>
+    </div>
+
+    <div class="chartPanel">
+        <div id="pie" class="chart"></div>
+        <div id="pieLegend" class="legend"></div>
+    </div>
+
+    <div class="chartPanel">
+        <div id="line" class="chart"></div>
+        <div id="lineLegend" class="legend"></div>
+    </div>
+
+    <div class="chartPanel">
+        <div id="column" class="chart"></div>
+        <div id="columnLegend" class="legend"></div>
+    </div>
+
+    <div class="chartPanel">
+        <div id="stackColumn" class="chart"></div>
+        <div id="stackColumnLegend" class="legend"></div>
+    </div>
+
+    <div class="chartPanel">
+        <div id="barChart" class="chart"></div>
+        <div id="barChartLegend" class="legend"></div>
+    </div>
+
+    <div class="chartPanel">
+        <div id="stackBarChart" class="chart"></div>
+        <div id="stackBarChartLegend" class="legend"></div>
+    </div>
+</body>
+</html>
